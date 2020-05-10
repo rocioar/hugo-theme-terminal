@@ -40,6 +40,25 @@
       </ul>
     </ul>
     {{ end }}
+    <div class="spacer"></div>
+
+    <div class="social-links">
+      {{ if $.Site.Params.twitter.creator }}
+        <a href="https://twitter.com/{{ $.Site.Params.twitter.creator }}" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      {{ end }}
+      {{ if $.Site.Params.github.creator }}
+        <a href="https://github.com/{{ $.Site.Params.github.creator }}" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      {{ end }}
+      {{ if $.Site.Params.linkedin.creator }}
+        <a href="https://linkedin.com/in/{{ $.Site.Params.linkedin.creator }}" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      {{ end }}
+    </div>
   </ul>
 
   <ul class="menu__inner menu__inner--mobile">
