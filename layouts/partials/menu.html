@@ -58,6 +58,11 @@
           <i class="fab fa-linkedin"></i>
         </a>
       {{ end }}
+      {{ with .OutputFormats.Get "RSS" }}
+        <a href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
+          <i class="fas fa-rss"></i>
+        </a>
+      {{ end }}
     </div>
   </ul>
 
